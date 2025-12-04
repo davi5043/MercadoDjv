@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Boleto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="tela">   
+    <h2>Novo Boleto a Pagar</h2>
+
+    <label>NOME DO BOLETO</label><br>
+    <input id="descricaoBoleto">
+
+    <label>VALOR</label><br>
+    <input id="valorBoleto" type="number" ><br>
+
+    <label>DATA DE VENCIMENTO</label><br>
+    <input id="dataVencimentoPagar" type="date"><br>
+
+    <label>VALOR DO JUROS (%)</label><br>
+    <input id="jurosPagar" type="number" ><br>
+
+    <button onclick="salvarPagar()">Salvar</button>
+    <a href="pagar.html"><button>Voltar</button></a>
+</div>
+
+<script src="js/script.js"></script>
+<script type="module" src="js/script.js"></script>
+
+</body>
+</html>
