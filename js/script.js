@@ -121,5 +121,27 @@ async function salvarReceber() {
     alert("Recebimento registrado!")
     window.location.href = "receber.html"
 }
+window.pagarParcial = async function (id, valorAtual) {
+    let pago = Number(prompt("Valor pago:"))
+    if (pago <= 0) return;
 
- 
+    let novoValor = valorAtual - pago
+
+    if (novoValor <= 0) {
+        await deleteDoc(doc(db, "contas_receber", id))
+        alert("Conta quitada!")
+    } else {
+        await updateDoc(doc(db, "contas_receber", id), { valor: novoValor })
+    }
+
+    atualizarReceber()
+}
+function salvarPagar() {
+    let descricao = document.getElementById("descricaoBoleto").value;
+    let valor = Number(document.getElementById("valorBoleto").value);
+
+    if (descricao === "" || valor <= 0) {
+        alert("Preencha todos os campos!");
+        return;
+    }
+}
