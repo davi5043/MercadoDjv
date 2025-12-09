@@ -143,5 +143,10 @@ function salvarPagar() {
     if (descricao === "" || valor <= 0) {
         alert("Preencha todos os campos!");
         return;
+        
     }
 }
+    contasPagar.push({
+        descricao: descricao + " - R$ " + valor.toFixed(2),
+        pago: false
+    });

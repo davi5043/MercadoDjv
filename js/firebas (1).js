@@ -1,7 +1,7 @@
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"
 import { getFirestore, collection, addDoc, getDocs, updateDoc, doc, deleteDoc } 
-    from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+    from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"
 
 
 const firebaseConfig = {
@@ -12,11 +12,11 @@ const firebaseConfig = {
   messagingSenderId: "724183587012",
   appId: "1:724183587012:web:ea595196b6b6a2df475191",
   measurementId: "G-4HFPS9EXQK"
-};
+}
 
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const app = initializeApp(firebaseConfig)
+const db = getFirestore(app)
 
 
-export { db, collection, addDoc, getDocs, updateDoc, doc, deleteDoc };
+export { db, collection, addDoc, getDocs, updateDoc, doc, deleteDoc }
