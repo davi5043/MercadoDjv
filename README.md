@@ -99,9 +99,8 @@ Ele é criado automaticamente ao executar o projeto pela primeira vez.
 
 Este projeto resolve um problema real enfrentado pelo comerciante Cláudio, trazendo:
 
-✔ Organização  
-✔ Controle financeiro  
-✔ Cálculo automático de juros  
-✔ Pagamentos parciais  
-✔ Segurança e persistência dos dados  
+- Organização  
+- Controle financeiro   Cálculo automático de juros  
+- Pagamentos parciais  
+- Segurança e persistência dos dados  
 
