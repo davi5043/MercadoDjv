@@ -1,11 +1,11 @@
-import { db , getDocs, collection } from "./firebase.js"
+import { db , getDocs, collection, updateDoc, deleteDoc, doc } from "./firebase.js"
 
 
 window.pagarParcial = async function (id, valorAtual) {
-    let pago = Number(prompt("Valor pago:"))
+    let pago = Number(prompt("Valor pago:").replace(",", "."))
     if (pago <= 0) return
 
-    let novoValor = valorAtual - pago
+    let novoValor = Math.round( (valorAtual - pago) * 100) / 100
 
     if (novoValor <= 0) {
         await deleteDoc(doc(db, "contas_receber", id))
@@ -44,6 +44,5 @@ async function atualizarReceber() {
         lista.appendChild(li)
     })
 }
-
 
 atualizarReceber()

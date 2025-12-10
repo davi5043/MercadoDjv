@@ -1,4 +1,4 @@
-import { db , getDocs, collection, updateDoc, doc } from "./firebase.js"
+import { db , getDocs, collection, updateDoc, doc, deleteDoc } from "./firebase.js"
 
 window.pagar = async function (id) {
     await updateDoc(doc(db, "contas_pagar", id), { pago: true })
@@ -6,10 +6,11 @@ window.pagar = async function (id) {
 }
 
 window.pagarParcial = async function (id, valorAtual) {
-    let pago = Number(prompt("Valor pago:"))
+    let pago = Number(prompt("Valor pago:").replace(",", "."))
     if (pago <= 0) return
 
-    let novoValor = valorAtual - pago
+    let novoValor = Math.round( (valorAtual - pago) * 100) / 100
+    
 
     if (novoValor <= 0) {
         await deleteDoc(doc(db, "contas_pagar", id))
@@ -48,7 +49,7 @@ async function atualizarPagar() {
         const li = document.createElement("li")
 
         li.innerHTML = `
-            ${d.descricao} - R$ ${d.valor}
+            ${d.descricao} - R$ ${d.valor.toFixed(2)}
             ${d.pago ? "✔️ Pago" : `<button onclick="pagarParcial('${item.id}', ${d.valor})">Pagar</button>`}
         `
         lista.appendChild(li)
