@@ -1,11 +1,8 @@
-# 👨‍💼 Sistema de Controle Financeiro – Mini Mercado do Cláudio
+# Sistema de Controle Financeiro – Mini Mercado do Cláudio
 
-[![GitHub](https://img.shields.io/badge/Repositório-GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]()
-[![Projeto Acadêmico](https://img.shields.io/badge/Projeto-Acadêmico-blue?style=for-the-badge&logo=bookstack&logoColor=white)]()
+--
 
----
-
-## 👥 Integrantes do Grupo
+## Integrantes do Grupo
 
 - Davi Foppa
 - João Pedro Santos  
