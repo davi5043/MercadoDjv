@@ -94,6 +94,7 @@ Ele é criado automaticamente ao executar o projeto pela primeira vez.
 >  *![imagem da página de menu](./imagens/image.png)*
 >  *![imagem de contas de pagar](./imagens/image-1.png)*
 >  *![imagem de contas a receber](./imagens/image-2.png)*
+>  *![imagem de demonstração de pagamento](image.png)*
  
 ## Conclusão
 
