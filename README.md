@@ -91,7 +91,7 @@ Ele é criado automaticamente ao executar o projeto pela primeira vez.
 ## Prints do Projeto
 
 >  *![imagem da página de login](./imagens/image-3.png)*
->  *![imagem da página de menu](./imagens/image.png)*
+>  *![imagem da página de menu](./imagens/image4.png)*
 >  *![imagem de contas de pagar](./imagens/image-1.png)*
 >  *![imagem de contas a receber](./imagens/image-2.png)*
 >  *![imagem de demonstração de pagamento](./imagens/image.png)*
