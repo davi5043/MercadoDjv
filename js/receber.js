@@ -46,5 +46,5 @@ async function atualizarReceber() {
     })
 }
 
-// Chama a função para inicializar a lista de contas a receber
+// Chama a função para inicializar a lista de contas a receber.
 atualizarReceber()
