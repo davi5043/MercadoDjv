@@ -46,6 +46,17 @@ button:active {
     transform: translateY(1px); 
 }
 
+button.voltar {
+    width: 40%;         
+    margin-top: 15px;
+    background: #003f8a;
+    font-size: 14px;
+}
+
+button.voltar:hover {
+    background: #002f6a;
+}
+
 ul {
     list-style: none;
     padding: 0;

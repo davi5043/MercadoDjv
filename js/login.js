@@ -2,7 +2,7 @@ function fazerLogin () {
     let user = document.getElementById("usuario").value
     let pass = document.getElementById("senha").value
 
-    if (user === "admin" && pass === "123") {
+    if (user === "admin","vitor" && pass === "123") {
         window.location.href = "menu.html"
     } else {
         alert("Usuário ou senha incorretos!")
