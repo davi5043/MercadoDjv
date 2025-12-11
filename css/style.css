@@ -1,34 +1,49 @@
 body {
-    background: #1f5fbf;
-    font-family: Arial, sans-serif;
+    background: #1e4f9e; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .tela {
-    background: #2266cc;
-    width: 350px;
+    background: #1a5cb2;
+    width: 400px;
     margin: 40px auto;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 input, button {
-    margin: 8px;
-    padding: 10px;
-    width: 80%;
-    border-radius: 5px;
-    border: none;
+    margin: 10px 0;
+    padding: 12px;
+    width: 85%;
+    border-radius: 8px;
+    border: 1px solid #003f8a;
+    font-size: 16px;
+}
+
+input {
+    background: #ffffff;
+    color: #003f8a;
 }
 
 button {
-    background: #003f8a;
+    background: linear-gradient(135deg, #003f8a, #004a9b); 
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background: #002f6a;
+    background-color: #002f6a;
+    transform: translateY(-2px); 
+}
+
+button:active {
+    transform: translateY(1px); 
 }
 
 ul {
@@ -37,8 +52,14 @@ ul {
 }
 
 li {
+    background: #0061b3;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
     background: #004a9b;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
 }
