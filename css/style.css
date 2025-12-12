@@ -1,14 +1,13 @@
 body {
-    background: #1e4f9e; 
+    background: #1e4f9e;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: white;
     margin: 0;
     padding: 0;
-
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 .cabecalho {
@@ -16,7 +15,7 @@ body {
     padding: 20px 0;
     font-size: 28px;
     font-weight: bold;
-    background: #1a5cb2; 
+    background: #1a5cb2;
     border-bottom: 2px solid #003f8a;
 }
 
@@ -28,27 +27,37 @@ body {
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
-    flex: 1; 
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-input, button {
-    margin: 12px 0;
-    padding: 16px 24px; /* aumento de altura e espaçamento horizontal */
-    width: 95%;         /* botões mais largos */
-    border-radius: 10px; /* cantos arredondados mais suaves */
+button {
+    margin: 12px 22px;
+    padding: 8px 22px;
+    width: 250px;
+    max-width: 100%;
+    border-radius: 10px;
     border: 1px solid #003f8a;
-    font-size: 18px;    /* fonte maior para melhor leitura */
-    box-sizing: border-box; /* padding e border não aumentam a largura */
+    font-size: 18px;
+    box-sizing: border-box;
+    white-space: nowrap;
 }
 
 input {
     background: #ffffff;
     color: #003f8a;
+    margin: px 6px;
+    padding: 8px 24px;
+    width: 250px;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #003f8a;
+    font-size: 18px;
+    box-sizing: border-box;
+    white-space: nowrap;
 }
 
 button {
@@ -59,7 +68,19 @@ button {
 }
 
 button:hover {
-    background-color: #002f6a;
+    background-color: #003f8a;
+    transform: translateY(-2px);
+}
+
+button.salvarPagar{
+    background: linear-gradient(135deg, #003f8a, #004a9b);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.salvarPagar:hover{
+    background-color: #007a2d;
     transform: translateY(-2px);
 }
 
@@ -68,11 +89,13 @@ button:active {
 }
 
 button.voltar {
-    width: 100%;          /* botão voltar ocupa toda largura da tela */
-    margin-top: 50px;
+    width: 250px; 
+    margin-top: 20px;
+    margin-left: auto; 
+    margin-right: auto; 
     background: #003f8a;
-    font-size: 16px;      /* fonte um pouco menor para diferenciar */
-    padding: 14px 24px;   /* padding alinhado com o botão */
+    font-size: 16px;
+    padding: 14px 24px;
     border-radius: 10px;
 }
 
@@ -103,6 +126,6 @@ li:hover {
     text-align: center;
     padding: 10px 0;
     font-size: 14px;
-    background: #1a5cb2; 
+    background: #1a5cb2;
     border-top: 2px solid #003f8a;
 }
