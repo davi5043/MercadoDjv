@@ -2,10 +2,15 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Novo Boleto</title>
+    <title>Novo Boleto - Mercado DJV®</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
+<header class="cabecalho">
+    Mercado DJV<sup>®</sup>
+</header>
+
 
 <div class="tela">   
     <h2>Novo Boleto a Pagar</h2>
@@ -19,12 +24,17 @@
     <label>DATA DE VENCIMENTO</label><br>
     <input id="dataVencimentoPagar" type="date"><br>
 
-    <label>VALOR DO JUROS (%)</label><br>
+    <label>JUROS (%) AO DIA</label><br>
     <input id="jurosPagar" type="number"><br>
 
     <button onclick="salvarPagar()">Salvar</button>
     <a href="pagar.html"><button>Voltar</button></a>
 </div>
+
+
+<footer class="rodape">
+    Desenvolvedores: Davi Foppa, João Santos, Vitor Santos
+</footer>
 
 <script type="module" src="../js/novo_pagar.js"></script>
 </body>

@@ -2,10 +2,16 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Novo Recebimento</title>
+    <title>Novo Recebimento - Mercado DJV®</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
+
+<header class="cabecalho">
+    Mercado DJV<sup>®</sup>
+</header>
+
 
 <div class="tela">
     <h2>Novo Recebimento</h2>
@@ -16,7 +22,7 @@
     <label>VALOR</label><br>
     <input id="valorDivida" type="number"><br>
 
-    <label>VALOR DO JUROS (%)</label><br>
+    <label>JUROS (%) AO DIA</label><br>
     <input id="jurosDia" type="number"><br>
 
     <label>DATA DE VENCIMENTO</label><br>
@@ -25,6 +31,11 @@
     <button onclick="salvarReceber()">Salvar</button>
     <a href="receber.html"><button>Voltar</button></a>
 </div>
+
+
+<footer class="rodape">
+    Desenvolvedores: Davi Foppa, João Santos, Vitor Santos
+</footer>
 
 <script type="module" src="../js/novo_receber.js"></script>
 </body>

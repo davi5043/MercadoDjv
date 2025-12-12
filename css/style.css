@@ -5,24 +5,45 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    background: #1a5cb2; 
+    border-bottom: 2px solid #003f8a;
 }
 
 .tela {
     background: #1a5cb2;
     width: 400px;
+    max-width: 90%;
     margin: 40px auto;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 input, button {
-    margin: 10px 0;
-    padding: 12px;
-    width: 85%;
-    border-radius: 8px;
+    margin: 12px 0;
+    padding: 16px 24px; /* aumento de altura e espaçamento horizontal */
+    width: 95%;         /* botões mais largos */
+    border-radius: 10px; /* cantos arredondados mais suaves */
     border: 1px solid #003f8a;
-    font-size: 16px;
+    font-size: 18px;    /* fonte maior para melhor leitura */
+    box-sizing: border-box; /* padding e border não aumentam a largura */
 }
 
 input {
@@ -31,7 +52,7 @@ input {
 }
 
 button {
-    background: linear-gradient(135deg, #003f8a, #004a9b); 
+    background: linear-gradient(135deg, #003f8a, #004a9b);
     color: white;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
@@ -39,18 +60,20 @@ button {
 
 button:hover {
     background-color: #002f6a;
-    transform: translateY(-2px); 
+    transform: translateY(-2px);
 }
 
 button:active {
-    transform: translateY(1px); 
+    transform: translateY(1px);
 }
 
 button.voltar {
-    width: 40%;         
-    margin-top: 15px;
+    width: 100%;          /* botão voltar ocupa toda largura da tela */
+    margin-top: 50px;
     background: #003f8a;
-    font-size: 14px;
+    font-size: 16px;      /* fonte um pouco menor para diferenciar */
+    padding: 14px 24px;   /* padding alinhado com o botão */
+    border-radius: 10px;
 }
 
 button.voltar:hover {
@@ -60,6 +83,7 @@ button.voltar:hover {
 ul {
     list-style: none;
     padding: 0;
+    width: 100%;
 }
 
 li {
@@ -73,4 +97,12 @@ li {
 
 li:hover {
     background: #004a9b;
+}
+
+.rodape {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    background: #1a5cb2; 
+    border-top: 2px solid #003f8a;
 }

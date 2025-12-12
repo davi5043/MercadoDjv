@@ -17,6 +17,7 @@ window.pagarParcial = async function (id, valorAtual) {
     atualizarReceber()  
 }
 
+
 // Função para atualizar a lista de contas a receber na interface
 async function atualizarReceber() {
     const lista = document.getElementById("listaReceber")  
