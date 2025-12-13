@@ -1,6 +1,6 @@
 import { db , getDocs, collection, updateDoc, deleteDoc, doc } from "./firebase.js"
 
-// Função para realizar o pagamento parcial de uma conta
+
 window.pagarParcial = async function (id, valorAtual) {
     let pago = Number(prompt("Valor pago:").replace(",", "."))
     if (pago <= 0) return
@@ -17,7 +17,7 @@ window.pagarParcial = async function (id, valorAtual) {
     atualizarReceber()
 }
 
-// Função para atualizar a lista de contas a receber na interface
+
 async function atualizarReceber() {
     const lista = document.getElementById("listaReceber")
     if (!lista) return
@@ -26,7 +26,7 @@ async function atualizarReceber() {
 
     const dados = await getDocs(collection(db, "contas_receber"))
 
-    // 👉 Verifica se não existe nenhuma conta cadastrada
+    
     if (dados.empty) {
         lista.innerHTML = `<li>Nenhuma conta disponível no momento.</li>`
         return
@@ -53,5 +53,5 @@ async function atualizarReceber() {
     })
 }
 
-// Inicializa a lista
+
 atualizarReceber()
